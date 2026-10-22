@@ -1,14 +1,16 @@
 # API Improvement Proposals (Atonom)
 
 **TL;DR:** Design guidance for Atonom public HTTP/OpenAPI APIs, forked from
-[Google AIPs](https://google.aip.dev/) and scoped to what our BFF contracts use.
+[Google AIPs](https://google.aip.dev/). This repo is the source of truth;
+`bff-public-api` implements it.
 
 ## Overview
 
-This repository is the source of truth for public API design guidance used by
-`bff-public-api` (and related edge contracts). It keeps Google AIP numbering and
-site tooling where useful, but drops Google Cloud–, protobuf-, client-library-,
-and product-area-specific guidance that does not apply to our JSON HTTP APIs.
+This repository is the **source of truth** for public API design. Edge contracts
+in `bff-public-api` (and related BFFs) **must** follow the approved AIPs here.
+It keeps Google AIP numbering and site tooling where useful, but drops Google
+Cloud–, protobuf-, client-library-, and product-area-specific guidance that does
+not apply to our JSON HTTP APIs.
 
 ## Scope
 
@@ -19,8 +21,8 @@ and product-area-specific guidance that does not apply to our JSON HTTP APIs.
   Actions on Google / client-library AIPs, long-running operations, batch RPCs,
   field masks, etags, and other patterns we do not expose publicly.
 
-When guidance here conflicts with an approved public OpenAPI contract in
-`bff-public-api`, prefer the live contract and update these AIPs.
+When a BFF contract disagrees with an approved AIP, **change the BFF** (or
+propose an AIP amendment). Do not treat live OpenAPI as overriding this repo.
 
 ## Getting started
 

@@ -26,8 +26,10 @@ if [[ "$(docker images -q aip-site 2> /dev/null)" == "" ]]; then
 fi
 
 # Run the image.
+# Host port 4400 (not 4000): local Tilt maps data-fetch to 4000.
+echo "AIP site: http://127.0.0.1:4400"
 docker run --rm \
-  -p 4000:4000/tcp -p 4000:4000/udp \
+  -p 4400:4000/tcp \
   -p 35729:35729/tcp -p 35729:35729/udp \
   --mount type=bind,source=`pwd`,destination=/code/,readonly \
   aip-site \

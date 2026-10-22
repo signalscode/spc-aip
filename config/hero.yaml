@@ -14,9 +14,8 @@ shortcuts:
       text: Read AIP-1
   - title: Designing endpoints?
     description: |
-      Guidance under <code>aip/general/</code> applies to contracts in
-      <code>bff-public-api</code>. Prefer the live OpenAPI contract if guidance
-      and an approved surface disagree.
+      AIPs under <code>aip/general/</code> are the source of truth.
+      <code>bff-public-api</code> and related contracts must follow them.
     button:
       href: /general
       text: Browse AIPs
