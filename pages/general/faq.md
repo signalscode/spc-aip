@@ -21,7 +21,8 @@ rules.
 
 Where this fork diverges, the local AIP wins. Settled differences include opaque
 string ids (format still open — see [TODO.md](../../TODO.md)), colon-delimited
-custom methods (`:clone`, not a path segment), snake_case JSON,
+custom methods (`:clone`, `:generate-summary` — kebab-case verbs, not path
+segments), snake_case JSON,
 `application/problem+json` errors (AIP-193), no public field masks / etags, and
 PUT Replace for singletons with **final** Delete (no public restore).
 
