@@ -19,10 +19,10 @@ rules.
 
 ## How do Atonom AIPs differ from google.aip.dev?
 
-Where this fork diverges, the local AIP wins. Settled differences include opaque
-string ids (format still open — see [TODO.md](../../TODO.md)), colon-delimited
+Where this fork diverges, the local AIP wins. Settled differences include
+16-character UID ids ([AIP-122](../../aip/general/0122.md)), colon-delimited
 custom methods (`:clone`, `:generate-summary` — kebab-case verbs, not path
-segments), snake_case JSON,
+segments), snake_case JSON with common abbreviations (`delay_ms`, `config`),
 `application/problem+json` errors (AIP-193), no public field masks / etags, and
 PUT Replace for singletons with **final** Delete (no public restore).
 

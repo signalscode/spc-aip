@@ -3,25 +3,6 @@
 Blocking gaps. Related AIPs are **`state: draft`** until these are resolved;
 do not treat them as fully approved guidance for stable (`/vN`) contracts.
 
-## Opaque public id format
-
-**Status:** Undecided (AIP draft)  
-**AIP:** [AIP-122](aip/general/0122.md), [AIP-148](aip/general/0148.md)
-
-Public ids **must** be opaque strings, but construction is not defined yet.
-
-Decide and document:
-
-- Format / alphabet / length
-- Checksum (if any)
-- Type prefixing (e.g. `book_…`) vs unprefixed
-- Mapping from internal keys
-- Globally unique vs per-type unique
-
-Until then, examples use placeholder opaque strings only.
-
-Refs: `aip/general/0122.md` (identity fields + TODO), `aip/general/0148.md` (`id` row + TODO).
-
 ## PATCH field semantics
 
 **Status:** Undecided (AIP draft; blocking for stable `/vN` Update)  
