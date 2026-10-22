@@ -3,25 +3,6 @@
 Blocking gaps. Related AIPs are **`state: draft`** until these are resolved;
 do not treat them as fully approved guidance for stable (`/vN`) contracts.
 
-## PATCH field semantics
-
-**Status:** Undecided (AIP draft; blocking for stable `/vN` Update)  
-**AIP:** [AIP-134](aip/general/0134.md), [AIP-203](aip/general/0203.md)
-
-Exact PATCH semantics are not locked. Open questions:
-
-1. Presence vs omission as the change signal; how to clear optional fields
-2. Meaning of JSON `null` (clear / error / ignore)
-3. Falsey values (`false`, `0`, `""`) vs “leave unchanged”
-4. Nested objects / arrays — merge vs replace
-5. Content-Type profile (JSON Merge Patch, JSON Patch, plain JSON, …)
-6. Whether Update schemas need an explicit tri-state (omit / null / value)
-
-Until resolved, PATCH examples are illustrative only; prefer PUT Replace when
-PATCH would be ambiguous.
-
-Refs: `aip/general/0134.md` (TODO — PATCH field semantics), `aip/general/0203.md`.
-
 ## Pagination model
 
 **Status:** Undecided (AIP draft; blocking for stable `/vN` List)  

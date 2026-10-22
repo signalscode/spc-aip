@@ -19,7 +19,8 @@ not apply to our JSON HTTP APIs.
   OpenAPI contracts under `bff-public-api/spec/api/endpoints/`.
 - **Out:** protobuf packaging, gRPC transcoding, Google Cloud / Firebase /
   Actions on Google / client-library AIPs, long-running operations, batch RPCs,
-  field masks, etags, and other patterns we do not expose publicly.
+  field masks, etags, and other patterns we do not expose publicly. Partial
+  Update uses JSON Merge Patch (RFC 7396); see [AIP-134](aip/general/0134.md).
 
 When a BFF contract disagrees with an approved AIP, **change the BFF** (or
 propose an AIP amendment). Do not treat live OpenAPI as overriding this repo.

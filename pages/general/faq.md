@@ -23,12 +23,13 @@ Where this fork diverges, the local AIP wins. Settled differences include
 `{type}_{object}` UID ids ([AIP-122](../../aip/general/0122.md)), colon-delimited
 custom methods (`:clone`, `:generate-summary` — kebab-case verbs, not path
 segments), snake_case JSON with common abbreviations (`delay_ms`, `config`),
-`application/problem+json` errors (AIP-193), no public field masks / etags, and
-PUT Replace for singletons with **final** Delete (no public restore).
+`application/problem+json` errors (AIP-193), no public field masks / etags,
+PATCH as JSON Merge Patch (RFC 7396; Content-Type not significant), and PUT
+Replace for singletons with **final** Delete (no public restore).
 
-Pagination (`skip`/`limit` vs cursors) and several other topics are **undecided**
-and tracked in [TODO.md](../../TODO.md); do not treat draft AIPs as locked for
-`/vN`.
+Pagination (`skip`/`limit` vs cursors) and idempotency for Create / custom POST
+are **undecided** and tracked in [TODO.md](../../TODO.md); do not treat draft
+AIPs as locked for `/vN`.
 
 ## How do I run the site?
 
