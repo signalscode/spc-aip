@@ -7,32 +7,22 @@ buttons:
 shortcuts:
   - title: Curious about the basics?
     description: |
-      AIPs are a combination of design guidance and a system we use to manage
-      and track that guidance. Learn more about how the AIP program works in
-      the first AIP!
+      AIPs are design guidance for Atonom public HTTP/OpenAPI APIs. Start with
+      AIP-1 for how the program works.
     button:
       href: /1
       text: Read AIP-1
-  - title: Want to help?
+  - title: Designing endpoints?
     description: |
-      Interested in helping with AIPs? Contribute by proposing new guidance,
-      commenting on existing AIPs, or fixing typos. All contributions are
-      welcome!
+      Guidance under <code>aip/general/</code> applies to contracts in
+      <code>bff-public-api</code>. Prefer the live OpenAPI contract if guidance
+      and an approved surface disagree.
     button:
-      href: /contributing
-      text: Contribute to the project
-  - title: Want to use AIPs for your organization?
-    description: |
-      AIPs are designed to be useful outside of Google. Take a look at how you
-      might choose which AIPs are best suited to your API design needs.
-    button:
-      href: /adopting
-      text: Learn more
+      href: /general
+      text: Browse AIPs
   - title: Still have questions?
     description: |
-      Free free to take a look at the <a href="/faq">frequently asked
-      questions</a>. If you don't find an answer there, file an issue on our
-      GitHub repository.
+      See the <a href="/faq">FAQ</a>, or open an issue on the repository.
     button:
-      href: https://github.com/aip-dev/google.aip.dev/issues
-      text: Ask us on GitHub
+      href: /faq
+      text: Read the FAQ

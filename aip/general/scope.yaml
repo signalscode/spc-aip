@@ -15,8 +15,6 @@ categories:
   - code: compatibility
     title: Compatibility and Versioning
   - code: polish
-  - code: protobuf
-    title: Protocol buffers
   - code: misc
     title: Miscellaneous
     default: true
