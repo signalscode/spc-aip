@@ -1,23 +1,30 @@
 # API Improvement Proposals (Atonom)
 
-**TL;DR:** Design guidance for Atonom public HTTP/OpenAPI APIs, forked from
-[Google AIPs](https://google.aip.dev/). This repo is the source of truth;
-`bff-public-api` implements it.
+**TL;DR:** Design guidance for Atonom public HTTP/OpenAPI APIs and protobuf
+east-west design, forked from [Google AIPs](https://google.aip.dev/). This
+repo is the source of truth.
 
 ## Overview
 
-This repository is the **source of truth** for public API design. Edge contracts
-in `bff-public-api` (and related BFFs) **must** follow the approved AIPs here.
-It keeps Google AIP numbering and site tooling where useful, but drops Google
-Cloud–, protobuf-, client-library-, and product-area-specific guidance that does
-not apply to our JSON HTTP APIs.
+This repository is the **source of truth** for atonom public and internal
+east-west API design. It keeps Google AIP numbering and site tooling where
+useful, but drops Google Cloud–, protobuf-, client-library-, and
+product-area-specific guidance that does not apply.
+
+Public north-south API edge contracts in `bff-public-api` (and related BFFs)
+**must** follow the approved AIPs here. See skill `a-public-endpoint`.
+
+Internal east-west protobuf design in `spc-sdk/atonom/**` **must** follow the
+approved AIPs here. However, existing published and implemented >= "v1" designs
+should be considered accepted and not modified. See skill `a-sdk-task`.
 
 ## Scope
 
 - **In:** resource-oriented HTTP design, standard and custom methods, fields,
   pagination, filtering, errors, naming, compatibility, and versioning for
-  OpenAPI contracts under `bff-public-api/spec/api/endpoints/`.
-- **Out:** protobuf packaging, gRPC transcoding, Google Cloud / Firebase /
+  OpenAPI contracts under `bff-public-api/spec/api/endpoints/`. Also east-west
+  protobuf design in `spc-sdk/atonom/**`.
+- **Out:** other protobuf packaging, gRPC transcoding, Google Cloud / Firebase /
   Actions on Google / client-library AIPs, long-running operations, batch RPCs,
   field masks, etags, and other patterns we do not expose publicly. Partial
   Update uses JSON Merge Patch (RFC 7396); see [AIP-134](aip/general/0134.md).
